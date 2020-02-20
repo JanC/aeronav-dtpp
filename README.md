@@ -61,6 +61,17 @@ INFO: Reading output/current.xml
 INFO: Parsed 23930 charts in ./output/dtpp.sqlite
 ```
 
-### Samples
+## Samples
 
 A sample .xml and .sqlite are located in the [samples](samples) folder. Those contain only the charts from the KSBP airport.
+
+## Development 
+
+This section is meant for development tips
+
+Running from command line
+
+```
+python3 -m anm_charts.__main__ catalogue
+python3 -m anm_charts.__main__ create-db
+```

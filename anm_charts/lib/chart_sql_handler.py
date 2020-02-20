@@ -42,16 +42,6 @@ class FAASQLChartHandler:
         :param faa_airport:
         :param faa_chart:
         """
-        # sql = "INSERT INTO dtpp VALUES ('{icao_ident}', '{apt_name}' ,'{chart_seq}' ,'{chart_name}','{chart_code}','{pdf_name}', '{state_code}', '{state_name}')".format(
-        #     icao_ident=faa_airport.icao_ident,
-        #     apt_name=faa_airport.apt_name,
-        #     chart_seq=faa_chart.chart_seq,
-        #     chart_name=faa_chart.chart_name,
-        #     chart_code=faa_chart.chart_code,
-        #     pdf_name=faa_chart.pdf_name,
-        #     state_code=faa_state.code,
-        #     state_name=faa_state.name,
-        # )
         sql = """INSERT INTO dtpp(
             icao_ident, apt_ident, apt_name, chart_seq, chart_name,
             chart_code, pdf_name, state_code,

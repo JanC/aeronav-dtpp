@@ -35,6 +35,6 @@ class FAAAirport:
         """
             {'ID': 'AFTON MUNI', 'military': 'N', 'apt_ident': 'AFO', 'icao_ident': 'KAFO', 'alnum': '9116'}
         """
-        self.id = faa_record["ID"]
+        self.apt_name = faa_record["ID"]
         self.apt_ident = faa_record["apt_ident"]
         self.icao_ident = faa_record["icao_ident"]

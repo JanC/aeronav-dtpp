@@ -21,6 +21,13 @@ class FAASQLChartProvider:
             results.append(chart)
         return airport, results
 
+    def get_cycle(self):
+        sql = 'SELECT cycle from cycle'
+        row = self.exec_sql(sql).fetchone()
+        return row[0]
+
+
+
     def exec_sql(self, sql):
         log.debug(sql)
         return self.conn.execute(sql)
